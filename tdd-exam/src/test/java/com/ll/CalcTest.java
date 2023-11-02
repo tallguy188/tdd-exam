@@ -18,7 +18,12 @@ public class CalcTest {
     void t2() {
         int rs = Calc.run("10 + 10");
         assertThat(rs).isEqualTo(20);  // rs가 20이랑 똑같아야한다는 단정문
+    }
 
-
+    @Test
+    @DisplayName("10 + 10 = 20")
+    void t3() {
+        int rs = Calc.run("10 - 10");
+        assertThat(rs).isEqualTo(0);  // rs가 20이랑 똑같아야한다는 단정문
     }
 }
